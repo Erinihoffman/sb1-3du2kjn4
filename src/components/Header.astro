@@ -8,8 +8,11 @@ const navItems = [
 
 <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <img src="./logo.png" width="200">
-    <nav>
+    <!-- Logo -->
+    <img src="/logo.png" alt="Erini Hoffman Logo" class="w-24">
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block">
       <ul class="flex gap-8">
         {navItems.map(item => (
           <li>
@@ -23,5 +26,32 @@ const navItems = [
         ))}
       </ul>
     </nav>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      id="mobile-menu-toggle" 
+      class="block md:hidden text-primary"
+      aria-label="Toggle Menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-white">
+    <ul class="flex flex-col gap-4 p-4">
+      {navItems.map(item => (
+        <li>
+          <a 
+            href={item.href}
+            class="text-primary hover:text-secondary transition-colors"
+          >
+            {item.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
 </header>
