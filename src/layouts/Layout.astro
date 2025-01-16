@@ -15,11 +15,23 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-248M4KYE60"></script>
+    <script>
+      // Ensure TypeScript compatibility
+      // @ts-ignore
+      window.dataLayer = window.dataLayer || [];
+      // @ts-ignore
+      function gtag(...args) { window.dataLayer.push(args); }
+      gtag('js', new Date());
+      gtag('config', 'G-248M4KYE60');
+    </script>
+    
     <meta charset="UTF-8" />
     <meta name="description" content="Erini Hoffman - Designer Portfolio" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="generator" content={Astro.generator || 'Astro'} />
     <title>{title}</title>
   </head>
   <body class="bg-neutral">
