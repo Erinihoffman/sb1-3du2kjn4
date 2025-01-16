@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Erini Hoffman">
+  <section class="min-h-screen flex items-center pt-20 pb-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Profile Section -->
+        <div>
+          <h1 class="font-display text-4xl md:text-6xl text-primary mb-6">
+            About Me
+          </h1>
+          <p class="text-lg mb-8 text-gray-600">
+            Hi, I’m Erini Hoffman, a passionate designer from Sweden. I specialize in creating meaningful digital experiences and have a deep love for design, creativity, and innovation.
+          </p>
+          <p class="text-lg mb-8 text-gray-600">
+            I grew up in a small village in Sweden. My family was not very wealthy, and life was a bit of a struggle. Despite the challenges, I always dreamed big and worked hard. Eventually, I packed my bags and moved to Greece, a journey that changed my life and inspired my creativity.
+          </p>
+          <div class="space-x-4">
+            <a href="https://t.acrsmartcam.com/163898/3664/0?bo=2779,2778,2777,2776,2775&po=6533&aff_sub5=SF_006OG000004lmDN" class="inline-block border border-primary text-primary px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors">
+             Find more about me here
+            </a>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="relative">
+          <div class="aspect-square bg-secondary rounded-full overflow-hidden">
+            <img src="./src/components/me.jpg" alt="Erini Hoffman" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-accent rounded-full -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-3xl text-primary text-center mb-16">My Journey</h2>
+      <p class="text-lg text-gray-600 leading-relaxed text-center">
+        My design journey began with a passion for creativity and has evolved into a career where I help bring ideas to life. Over the years, I’ve worked on a variety of projects, ranging from branding to web design, always striving for excellence and innovation.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 flex items-center gap-8">
+      <!-- Image Section -->
+      <div class="w-1/2">
+        <img src="./src/components/howl.jpg" alt="Howl" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <!-- Text Section -->
+      <div class="w-1/2 text-right">
+        <h2 class="font-display text-4xl text-primary mb-4">Passion Meets Creativity</h2>
+        <p class="text-gray-600 text-lg mb-6">
+          Every project I take on is a blend of creativity, passion, and purpose. Whether it’s designing a website or creating branding assets, I aim to craft experiences that leave a lasting impact.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

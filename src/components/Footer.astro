@@ -1,0 +1,30 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-primary text-white py-8 mt-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-display text-xl mb-4">Erini Hoffman</h3>
+        <p class="text-sm opacity-80">Designer & Creative Professional</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Connect</h4>
+        <ul class="space-y-2">
+          <li><a href="https://www.instagram.com/erini.diary/" class="hover:text-secondary transition-colors">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <p class="text-sm opacity-80">Get in touch for collaborations and opportunities.</p>
+        <a href="https://www.instagram.com/erini.diary/" class="inline-block mt-2 border border-white px-4 py-2 rounded hover:bg-white hover:text-primary transition-colors">
+          Contact Me Via IG
+        </a>
+      </div>
+    </div>
+    <div class="mt-8 pt-8 border-t border-white/20 text-center text-sm opacity-60">
+      © {currentYear} Erini Hoffman. All rights reserved.
+    </div>
+  </div>
+</footer>
