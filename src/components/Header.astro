@@ -1,19 +1,20 @@
 ---
 const navItems = [
   { href: '/', text: 'Home' },
-  { href: '/about', text: 'About' },
-  { href: 'https://www.instagram.com/erini.diary/', text: 'Contact' }
+  { href: '/about', text: 'About' }
 ];
 ---
 
 <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <img src="/logo.png" alt="Erini Hoffman Logo" class="w-24">
+    <!-- Clickable Logo -->
+    <a href="https://www.fanvue.com/erini.diary/fv-4" class="flex-shrink-0">
+      <img src="/logo.png" alt="Erini Hoffman Logo" class="w-24">
+    </a>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:block">
-      <ul class="flex gap-8">
+      <ul class="flex gap-8 items-center">
         {navItems.map(item => (
           <li>
             <a 
@@ -24,6 +25,15 @@ const navItems = [
             </a>
           </li>
         ))}
+        <!-- Chat with Me Button -->
+        <li>
+          <a 
+            href="https://www.fanvue.com/erini.diary/fv-4"
+            class="inline-block bg-primary text-white px-6 py-2 rounded-lg shadow hover:bg-secondary transition-colors"
+          >
+            Chat with Me
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -52,6 +62,15 @@ const navItems = [
           </a>
         </li>
       ))}
+      <!-- Chat with Me Button -->
+      <li>
+        <a 
+          href="https://www.fanvue.com/erini.diary/fv-4"
+          class="inline-block bg-primary text-white px-6 py-2 rounded-lg shadow hover:bg-secondary transition-colors"
+        >
+          Chat with Me
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

@@ -11,10 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.3",
+    "@astrojs/react": "^4.2.0",
     "@astrojs/tailwind": "^5.1.0",
-    "tailwindcss": "^3.4.1",
     "@fontsource/inter": "^5.0.17",
-    "@fontsource/playfair-display": "^5.0.19"
+    "@fontsource/playfair-display": "^5.0.19",
+    "astro": "^4.15.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swiper": "^11.2.2",
+    "tailwindcss": "^3.4.1"
   }
 }

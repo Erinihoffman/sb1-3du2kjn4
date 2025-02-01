@@ -1,0 +1,37 @@
+---
+import 'swiper/css'; // Import Swiper's core CSS
+import 'swiper/css/navigation'; // Import Navigation styles
+import 'swiper/css/pagination'; // Import Pagination styles
+import { Swiper, SwiperSlide } from 'swiper/react'; // Import React components
+import { Navigation, Pagination } from 'swiper/modules'; // Import correct module paths
+
+const images = [
+  '/Image (1).jpg',
+  '/Image (2).jpg',
+  '/Image (3).jpg',
+  '/Image (4).jpg',
+  '/Image (5).jpg',
+  '/Image (6).jpg',
+  '/Image (7).jpg',
+  '/Image (8).jpg',
+  '/Image (9).jpg',
+  '/Image (10).jpg',
+];
+---
+
+<div class="max-w-6xl mx-auto px-4 py-20">
+  <Swiper
+    modules={[Navigation, Pagination]} // Correctly import Swiper modules
+    spaceBetween={20}
+    slidesPerView={1}
+    navigation
+    pagination={{ clickable: true }}
+    loop={true}
+  >
+    {images.map((image, index) => (
+      <SwiperSlide key={index}>
+        <img src={image} alt={`Gallery Image ${index + 1}`} class="rounded-lg shadow-lg w-full h-auto" />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
